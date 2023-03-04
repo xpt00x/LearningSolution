@@ -1,0 +1,200 @@
+##############
+INFO GERAL SOBRE C# E A PLATAFORMA .NET
+##############
+
+- Net é uma plataforma composta por duas componentes principais
+    - Runtime environment
+    - Base Class Libraries
+
+- O runtime environment faz a compilação do código das varias linguagens .net (c#, f# e vb) 
+    em JIT (just in time compilation). Por este motivo, o compilador é chamado de JITTER.
+
+- O código de uma linguagem .net é compilado para aquilo se chama a intermediate language (IL ou MSIL microsoft intermediate language).
+- Base Class Libraries são um conjunto de código pre-packaged (pre compilado) que servem de base às linguagens todas do ,.net
+    - As BCL contêm os types primitivos (int, float, double, object, string)
+
+
+
+- A primeira versão mainstream do .net chamava-se .net framework (acho que a ultima versao foi o 4.8).
+    Haviam jitters que compilavam a IL de .net framework para outras plataformas, mono.
+- Criaram o .net core, a primeira versao (light) do .net verdadeiramente cross platform. (foi até à versão 3.1)
+- Da versão 3.1 foram diretos para a versão 5 e quando foram para a versão 5 deixaram cair os sufixos, passou-se a chamar só .net (a ultima versao LTS foi a 6, e a mais recente é a 7)
+- A nível de c# especificamente, a gente vai na versao 11, c# 11, que saiu ao mesmo tempo que o .net 7
+
+
+- o C# é uma linguagem strongly typed, todos os types de todas as variáveis são conhecidos aquando da compilação com a excecao do type dynamic.
+
+int banana = 2;
+banana = 2;
+string banana = "2";
+var banana = 2;
+
+- VAR != DYNAMIC. Var é apenas um shorthand que deixa ao compilador o trabalho de escrever o type especifico que tá a ser usado.
+
+- Dynamic significa que o type da variável que estamos a definir é desconhecido @ compile time.
+
+
+- Distinção entre value types e reference types.
+    - Um value type é uma data type que é definida inteiramente pelo seu valor em memoria.
+        (int, long, float, double)
+    - Um reference type é um data type que é definido por um conjunto de duas coisas: o seu valor, e uma referencia à localização de memoria onde esse valor está alocado.
+        (object, class, interfaces)
+
+
+- Stack e heap: value types são definidos na stack. Na stack, apenas tens o valor da variavel, mais nada.
+    No caso de reference types, o que encontras na stack é um endereço de memória para a heap, onde por sua vez está guardado a informação do reference type.
+
+- Garbage collection (keyword using, e destructors, e a interface IDisposable)
+
+
+- Interop (executar unmanaged code dentro da nossa aplicacao) muito usado para lidar com legacy systems e com pequenas porçoes de outros programas (excel)
+
+
+
+##########
+OOP
+##########
+
+
+Object oriented programming (stateful programming)
+Declarative programming (old school as fuck)
+Imperative programming (siga bilhete, nao ha estrutura muito bem definida, é rodar milho)
+Functional programming (stateless programming)
+
+
+Classe é o type primitivo mais usado, de longe.
+
+Mas existem outros types primitivos - Structs, Interfaces, Enumerations e Delegates
+
+Exemplo de struct. Uma struct é uma versão muito lightweight de uma classe.
+
+ struct point{
+    int coordX;
+    int coordY;
+ }
+
+Exemplo de uma enumeration. Uma enumeration é um map entre strings e ints.
+UserRoles.Cop;
+enum UserRoles {
+    Cop = 1,
+    Cod = 2,
+    Cov = 3,
+}
+
+Exemplo de um delegate. Um delegate no fundo, é um method signature. Casos em que isto é util: callback functions
+delegate int AddNumbers(int a, int b);
+AddNumbers += AddNumbersBiggerThanZero (esta funcao AddNumbersBiggerThanZero é uma funcao normal) 
+AddNumbers (behind the scenes, executa o AddNumbersBiggerThanZero)
+
+Exemplo de interface.
+
+public interface ICalculator {
+    public int AddNumbers(int a, int b);
+    public int SubtractNumbers(int a, int b);
+}
+
+public interface ILogger {
+    public void LogOperation(string output);
+}
+
+public class Serilogger : ILogger{
+    public void LogOperation(string output){
+        .... Create logs a partir do parametro output...
+        conexao ao ficheiro do serilog
+    }
+}
+public class GrayLog : ILogger{
+    public void LogOperation(string output){
+        .... Create logs a partir do parametro output...
+        mas com conexao a outra db de logs ou a outro sistema logs.
+    }
+}
+ 
+
+
+public class Calculator : ICalculator {
+    //estes sao obrigados a existir a partir do momento em que Calculator herda ou implementa da interface ICalculator
+
+    public ILogger logger = new Logger();
+
+    public int AddNumbers(int a, int b){
+        logger.LogOperation($"Soma de a + b : {a+b}");
+        return a+b;
+    }
+    public int SubtractNumbers(int a, int b){
+        logger.LogOperation($"Soma de a - b : {a-b}");
+        return a-b;
+    }
+
+    //estes nao sao obrigatorios existir
+    public int DivideNumbers(int a, int b){
+        return a/b;
+    }
+    public int MultiplyNumbers(int a, int b){
+        return a*b;
+    }
+}
+
+
+Dependency injection container
+(ILogger, Serilogger)
+
+
+Vamos falar de classes.
+
+[Authorize] //attribute
+public class NomeDaClasse : ClasseMae, IInterface1, IInterface2{
+    private int ValueType; //field
+    protected int ValueType2 {get;set;} //property
+
+    internal int Method1(string a){ //method
+        //fazer cenas
+    }
+
+    protected internal int ValueType3 {get;set;} //property
+    private protected int ValueType4 {get;set;} //property
+
+    public NomeDaClasse(){
+        //construir a classe
+    }
+    ~NomeDaClasse(){
+        //destruir a classe
+    }
+}
+
+
+public class BaseClass {
+    protected virtual int MethodToOverride(int a, int b){
+        return a + b;
+    }
+    public int Cenas(string a){
+        
+    }
+    public int Cenas(int a){
+
+    }
+    public int Cenas(int a, int b){
+
+    }
+    public string Cenas(int a, int b, int c){
+        
+    }
+}
+public sealed class NoChildren : BaseClass{
+
+    protected override MethodToOverride(int a, int b){
+        Console.WriteLine("Summing a and b");
+        return a+b;
+    }
+}
+
+public abstract class BaseClass2 {
+
+}
+
+
+
+public BaseClass2 objecto = new BaseClass2();
+
+
+Pesquisar sobre repository pattern (isto é uma design pattern)
