@@ -1,0 +1,20 @@
+{
+  "SerializedFilePath": "a:\\Repos\\Practice\\ExampleSolution\\Practice.Api.Tests\\obj\\Debug\\net7.0\\project.razor.json",
+  "FilePath": "a:\\Repos\\Practice\\ExampleSolution\\Practice.Api.Tests\\Practice.Api.Tests.csproj",
+  "Configuration": {
+    "ConfigurationName": "UnsupportedRazor",
+    "LanguageVersion": "1.0",
+    "Extensions": [
+      {
+        "ExtensionName": "UnsupportedRazorExtension"
+      }
+    ]
+  },
+  "ProjectWorkspaceState": {
+    "TagHelpers": [],
+    "CSharpLanguageVersion": 1100
+  },
+  "RootNamespace": null,
+  "Documents": [],
+  "SerializationFormat": "0.3"
+}

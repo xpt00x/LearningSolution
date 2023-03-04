@@ -1,0 +1,15 @@
+A:\Repos\Practice\ExampleSolution\Test3\bin\Debug\net7.0\OOPExamples.exe
+A:\Repos\Practice\ExampleSolution\Test3\bin\Debug\net7.0\OOPExamples.deps.json
+A:\Repos\Practice\ExampleSolution\Test3\bin\Debug\net7.0\OOPExamples.runtimeconfig.json
+A:\Repos\Practice\ExampleSolution\Test3\bin\Debug\net7.0\OOPExamples.dll
+A:\Repos\Practice\ExampleSolution\Test3\bin\Debug\net7.0\OOPExamples.pdb
+A:\Repos\Practice\ExampleSolution\Test3\obj\Debug\net7.0\OOPExamples.csproj.AssemblyReference.cache
+A:\Repos\Practice\ExampleSolution\Test3\obj\Debug\net7.0\OOPExamples.GeneratedMSBuildEditorConfig.editorconfig
+A:\Repos\Practice\ExampleSolution\Test3\obj\Debug\net7.0\OOPExamples.AssemblyInfoInputs.cache
+A:\Repos\Practice\ExampleSolution\Test3\obj\Debug\net7.0\OOPExamples.AssemblyInfo.cs
+A:\Repos\Practice\ExampleSolution\Test3\obj\Debug\net7.0\OOPExamples.csproj.CoreCompileInputs.cache
+A:\Repos\Practice\ExampleSolution\Test3\obj\Debug\net7.0\OOPExamples.dll
+A:\Repos\Practice\ExampleSolution\Test3\obj\Debug\net7.0\refint\OOPExamples.dll
+A:\Repos\Practice\ExampleSolution\Test3\obj\Debug\net7.0\OOPExamples.pdb
+A:\Repos\Practice\ExampleSolution\Test3\obj\Debug\net7.0\OOPExamples.genruntimeconfig.cache
+A:\Repos\Practice\ExampleSolution\Test3\obj\Debug\net7.0\ref\OOPExamples.dll

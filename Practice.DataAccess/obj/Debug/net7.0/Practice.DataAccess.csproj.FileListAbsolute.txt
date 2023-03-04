@@ -1,0 +1,12 @@
+A:\Repos\Practice\ExampleSolution\Practice.DataAccess\bin\Debug\net7.0\Practice.DataAccess.deps.json
+A:\Repos\Practice\ExampleSolution\Practice.DataAccess\bin\Debug\net7.0\Practice.DataAccess.dll
+A:\Repos\Practice\ExampleSolution\Practice.DataAccess\bin\Debug\net7.0\Practice.DataAccess.pdb
+A:\Repos\Practice\ExampleSolution\Practice.DataAccess\obj\Debug\net7.0\Practice.DataAccess.csproj.AssemblyReference.cache
+A:\Repos\Practice\ExampleSolution\Practice.DataAccess\obj\Debug\net7.0\Practice.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+A:\Repos\Practice\ExampleSolution\Practice.DataAccess\obj\Debug\net7.0\Practice.DataAccess.AssemblyInfoInputs.cache
+A:\Repos\Practice\ExampleSolution\Practice.DataAccess\obj\Debug\net7.0\Practice.DataAccess.AssemblyInfo.cs
+A:\Repos\Practice\ExampleSolution\Practice.DataAccess\obj\Debug\net7.0\Practice.DataAccess.csproj.CoreCompileInputs.cache
+A:\Repos\Practice\ExampleSolution\Practice.DataAccess\obj\Debug\net7.0\Practice.DataAccess.dll
+A:\Repos\Practice\ExampleSolution\Practice.DataAccess\obj\Debug\net7.0\refint\Practice.DataAccess.dll
+A:\Repos\Practice\ExampleSolution\Practice.DataAccess\obj\Debug\net7.0\Practice.DataAccess.pdb
+A:\Repos\Practice\ExampleSolution\Practice.DataAccess\obj\Debug\net7.0\ref\Practice.DataAccess.dll

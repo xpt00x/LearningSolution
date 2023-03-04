@@ -1,0 +1,15 @@
+A:\Repos\Practice\ExampleSolution\Practice.Core\bin\Debug\net7.0\Practice.Core.deps.json
+A:\Repos\Practice\ExampleSolution\Practice.Core\bin\Debug\net7.0\Practice.Core.dll
+A:\Repos\Practice\ExampleSolution\Practice.Core\bin\Debug\net7.0\Practice.Core.pdb
+A:\Repos\Practice\ExampleSolution\Practice.Core\bin\Debug\net7.0\Practice.DataAccess.dll
+A:\Repos\Practice\ExampleSolution\Practice.Core\bin\Debug\net7.0\Practice.DataAccess.pdb
+A:\Repos\Practice\ExampleSolution\Practice.Core\obj\Debug\net7.0\Practice.Core.csproj.AssemblyReference.cache
+A:\Repos\Practice\ExampleSolution\Practice.Core\obj\Debug\net7.0\Practice.Core.GeneratedMSBuildEditorConfig.editorconfig
+A:\Repos\Practice\ExampleSolution\Practice.Core\obj\Debug\net7.0\Practice.Core.AssemblyInfoInputs.cache
+A:\Repos\Practice\ExampleSolution\Practice.Core\obj\Debug\net7.0\Practice.Core.AssemblyInfo.cs
+A:\Repos\Practice\ExampleSolution\Practice.Core\obj\Debug\net7.0\Practice.Core.csproj.CoreCompileInputs.cache
+A:\Repos\Practice\ExampleSolution\Practice.Core\obj\Debug\net7.0\Practice.Core.csproj.CopyComplete
+A:\Repos\Practice\ExampleSolution\Practice.Core\obj\Debug\net7.0\Practice.Core.dll
+A:\Repos\Practice\ExampleSolution\Practice.Core\obj\Debug\net7.0\refint\Practice.Core.dll
+A:\Repos\Practice\ExampleSolution\Practice.Core\obj\Debug\net7.0\Practice.Core.pdb
+A:\Repos\Practice\ExampleSolution\Practice.Core\obj\Debug\net7.0\ref\Practice.Core.dll
